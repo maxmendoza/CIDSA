@@ -11379,3 +11379,27 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+/* utils */
+
+.justify{
+  text-align: justify;
+}
+
+.img3{
+  width: 50%;
+}
+
+.img4{
+  width: 35%;
+}
+
+@media (min-width: 768px) {
+  .img3{
+    width: 35%;
+  }
+  .img4{
+    width: 20%;
+  }
+
+}
