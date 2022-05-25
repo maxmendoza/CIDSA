@@ -25,28 +25,43 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/StylesAnim.css" rel="stylesheet"/>
   </head>
   <body>
     <!-- Navigation-->
     <!-- <a class="btn btn-dark" href="#signup">Inicio</a> -->
-    <nav class="navbar navbar-light bg-dark static-top">
-      <div class="container">
-        <div class="row justify-content-center text-center col-12">
-          <div class="col-lg-3 col-sm-12">
-            <a class="btn btn-dark" href="#signup">Inicio</a>
-          </div>
-          <div class="col-lg-3 col-sm-12">
-            <a class="btn btn-dark" href="#signup">¿Quienes somos?</a>
-          </div>
-          <div class="col-lg-3 col-sm-12">
-            <a class="btn btn-dark" href="#signup">Servicios</a>
-          </div>
-          <div class="col-lg-3 col-sm-12">
-            <a class="btn btn-dark" href="#signup">Contacto</a>
-          </div>
+    <div class="pos-f-t">
+      <div class="collapse show" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <nav class="navbar navbar-light bg-dark static-top sticky-top">
+            <div class="container">
+              <div class="row justify-content-center text-center col-12">
+                <div class="col-lg-3 col-sm-12">
+                  <a class="btn btn-dark" href="#signup">Inicio</a>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                  <a class="btn btn-dark" href="#signup">¿Quienes somos?</a>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                  <a class="btn btn-dark" href="#signup">Servicios</a>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                  <a class="btn btn-dark" href="#signup">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
-    </nav>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+
+
+   
     <!-- Masthead-->
     <header class="masthead">
       <div class="container position-relative">
@@ -167,9 +182,8 @@
       <div class="col-lg-3">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
           <img
-            class="img-fluid rounded-circle mb-3"
-            style="height:200px;width:200px;"
-            src="assets/img/regular/file-zipper.svg"
+            class="img-fluid rounded mb-3  imgAnim"
+            src="assets/img/documentos.png"
             alt="..."
           />
           <h5>Destrucciones Fiscales</h5>
@@ -181,8 +195,8 @@
       <div class="col-lg-3">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
           <img
-            class="img-fluid rounded-circle mb-3"
-            src="assets/img/testimonials-2.jpg"
+            class="img-fluid rounded mb-3 imgAnim"
+            src="assets/img/adentro.png"
             alt="..."
           />
           <h5>RECOLECCIÓN DE MATERIAL EMPACADO</h5>
@@ -194,28 +208,26 @@
       <div class="col-lg-3">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
           <img
-            class="img-fluid rounded-circle mb-3"
-            src="assets/img/testimonials-3.jpg"
+            class="img-fluid rounded mb-3  imgAnim"
+            src="assets/img/fabrica.png"
             alt="..."
           />
-          <h5>Sarah W.</h5>
+          <h5>   RECOLECCIÓN POR EVENTO</h5>
           <p class="font-weight-light mb-0">
-            "Thanks so much for making these free resources available to
-            us!"
+         
           </p>
         </div>
       </div>
       <div class="col-lg-3">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
           <img
-            class="img-fluid rounded-circle mb-3"
-            src="assets/img/testimonials-3.jpg"
+            class="img-fluid rounded mb-3  imgAnim"
+            src="assets/img/reloj.png"
             alt="..."
           />
-          <h5>Sarah W.</h5>
+          <h5>Recolección programada</h5>
           <p class="font-weight-light mb-0">
-            "Thanks so much for making these free resources available to
-            us!"
+          
           </p>
         </div>
       </div>
@@ -427,5 +439,8 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
